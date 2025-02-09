@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh; /* Asegura que se use todo el alto de la ventana */
+  flex-direction: column;
+  position: relative; /* Esto es necesario para que los elementos con position: absolute funcionen correctamente */
+}
+
+
+.buttons {
+  margin-top: 120px; /* Ajusta según la distancia que desees entre la flor y los botones */
+  display: flex;
+  justify-content: space-between; /* Esto pone los botones uno al lado del otro */
+  z-index: 2; /* Asegura que los botones estén por encima de la flor */
+}
+
+.si-boton {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #178515;
+  color: white;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+.no-boton {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #C63636;
+  color: white;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+}

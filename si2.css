@@ -1,0 +1,32 @@
+/* Aseguramos que el body ocupa toda la pantalla y centra todo en la parte superior */
+body {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: flex-start; /* Alinea todo al principio de la pantalla */
+    align-items: center; /* Centra los elementos horizontalmente */
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .titulo {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px; /* Un poco de espacio arriba */
+  }
+  
+  .gif_container {
+    display: flex;
+    justify-content: center; /* Centra el gif horizontalmente */
+    align-items: center; /* Centra el gif verticalmente */
+    height: 60px; /* Puedes ajustar la altura según sea necesario */
+    margin-top: 10px; /* Espacio entre el título y el gif */
+  }
+  
+  .gif_container img {
+    width: auto;
+    height: 600%; /* Ajusta el tamaño del gif según la altura del contenedor */
+  }
+  
+ 
+  

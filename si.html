@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="si.css" />
+    <link rel="icon" href="bingo.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="si2.css">
+    <link rel="stylesheet" href="letras.css" />
+    <title>Paola</title>
+<meta name="description" content="Página de confirmación con un mensaje especial.">
+    <meta name="keywords" content="confirmación, mensaje especial, alegría">
+  </head>
+  <body><br><br><br>
+    <div class="greetings">
+      <span>M</span>
+      <span>U</span>
+      <span>U</span>
+      <span>A</span>
+      <span>C</span>
+      <span>K</span>
+    </div>
+    
+  
+  
+    <h1 class="titulo"><br> ¡SABÍA QUE DIRIAS <br> QUE SÍ!<br> 
+      <a href="index.html" class="heart-link" style="color: #fff;">❤️</a>
+    </h1>
+    <div class="gif_container">
+        <img src="si.gif" alt="GIF de celebración">
+    </div>
+
+
+  
+    <div class="night"></div>
+    
+      
+    <audio id="background-music" autoplay loop>
+      <source src="wait.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          var audio = document.getElementById("background-music");
+          var playAudio = function () {
+              audio.play().then(() => {
+                  console.log("Música reproducida correctamente.");
+              }).catch(error => {
+                  console.log("Autoplay bloqueado. Esperando interacción del usuario.");
+              });
+          };
+
+          // Intentar reproducir la música cuando la página cargue
+          playAudio();
+
+          // Si el autoplay es bloqueado, reproducir cuando el usuario haga clic en cualquier parte
+          document.addEventListener("click", playAudio, { once: true });
+      });
+  </script>
+    
+    <script src="script.js"></script>
+    <script src="anim.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

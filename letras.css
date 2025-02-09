@@ -1,0 +1,43 @@
+.greetings{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.greetings > span{
+  animation: glow 10s ease-in-out infinite;
+}
+@keyframes glow {
+    0%, 80% { /* 10 segundos de encendido (10/12 = 83.33%) */
+        color: #fff;
+        text-shadow: 0 0 12px #ff2054, 0 0 50px #ff2054, 0 0 100px #ff63d8;
+    }
+    90%, 100% { /* 2 segundos de apagado (2/12 = 16.67%) */
+        color: #0f191c5e;
+        text-shadow: none;
+    }
+  }
+
+
+.titulo {
+  margin-bottom: 180px;
+  font-family: "Arial ", Arial, sans-serif;
+  color: rgba(246, 150, 255, 0.405);
+  position: top;
+  font-weight: bold;
+  letter-spacing: 7px;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+
+
+
+}
+
